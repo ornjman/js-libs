@@ -51,7 +51,7 @@ var activityTracker = function () {
     active();
   }
   // function to set the idle time value
-  function setIdleTime(minimumTime){
+  function setMinimumIdleTime(minimumTime){
     minimumIdleTime = minimumTime;
   }
 
@@ -60,6 +60,7 @@ var activityTracker = function () {
   // register functions for scope
   o.registerActiveCallback = registerActiveCallback;
   o.registerIdleCallback = registerIdleCallback;
+  o.minimumIdleTime = minimumIdleTime;
 
   return o;
 };
