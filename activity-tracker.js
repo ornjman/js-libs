@@ -60,7 +60,7 @@ var activityTracker = function () {
   // register functions for scope
   o.registerActiveCallback = registerActiveCallback;
   o.registerIdleCallback = registerIdleCallback;
-  o.minimumIdleTime = minimumIdleTime;
+  o.setMinimumIdleTime = setMinimumIdleTime;
 
   return o;
 };
